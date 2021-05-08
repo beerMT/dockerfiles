@@ -1,2 +1,2 @@
 # dockerfiles
-Varioius Dockerfiles used for ops and analysis
+Various Dockerfiles used for ops and analysis
