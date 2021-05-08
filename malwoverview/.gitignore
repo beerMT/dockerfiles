@@ -1,0 +1,3 @@
+# Don't commit malwapi.conf file
+.malwapi.conf
+malwapi.conf
