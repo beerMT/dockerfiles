@@ -5,7 +5,7 @@
 >Docker container that sets up pre-reqs and then installs the Malwoverview project.
 
 - [Docker Container](https://hub.docker.com/r/bruteforce/malwoverview) on Docker Hub
-- [Dockerfile](https://github.com/beerMT/malwoverview_docker/blob/main/malwoverview.Dockerfile) on GitHub
+- [Dockerfile](https://github.com/beerMT/dockerfiles/blob/main/malwoverview/malwoverview.Dockerfile) on GitHub
 
 ## Usage
 
