@@ -1,13 +1,13 @@
-# Workflow for CAPA Dockerfile
+# Workflow for Subjack Dockerfile
 
-name: CAPA to Docker Hub
+name: Subjack to Docker Hub
 
 on:
   push:
     branches: [ main ]
 
     paths:
-      - 'capa/**'
+      - 'subjack/**'
 
 jobs:
 
@@ -41,9 +41,9 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: ./
-          file: capa/capa.Dockerfile
+          file: subjack/subjack.Dockerfile
           builder: ${{ steps.buildx.outputs.name }}
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/capa:latest
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/subjack:latest
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache

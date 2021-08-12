@@ -1,13 +1,13 @@
-# Workflow for CAPA Dockerfile
+# Workflow for NMAP_CSbeacon_grab Dockerfile
 
-name: CAPA to Docker Hub
+name: NMAP_CSbeacon_Grab to Docker Hub
 
 on:
   push:
     branches: [ main ]
 
     paths:
-      - 'capa/**'
+      - 'nmap_CSbeacon_grab/**'
 
 jobs:
 
@@ -41,9 +41,9 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: ./
-          file: capa/capa.Dockerfile
+          file: nmap_CSbeacon_grab/nmap_beacon_grab.Dockerfile
           builder: ${{ steps.buildx.outputs.name }}
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/capa:latest
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/nmap_beacon_grab:latest
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache

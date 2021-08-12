@@ -1,13 +1,13 @@
-# Workflow for CAPA Dockerfile
+# Workflow for Malwoverview Dockerfile
 
-name: CAPA to Docker Hub
+name: Malwoverview to Docker Hub
 
 on:
   push:
     branches: [ main ]
 
     paths:
-      - 'capa/**'
+      - 'malwoverview/**'
 
 jobs:
 
@@ -41,9 +41,9 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: ./
-          file: capa/capa.Dockerfile
+          file: malwoverview/malwoverview.Dockerfile
           builder: ${{ steps.buildx.outputs.name }}
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/capa:latest
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/malwoverview:latest
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache
