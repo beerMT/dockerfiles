@@ -10,6 +10,7 @@
 ## Usage
 
 To run the CAPA tool against a file for inspection:
+
 ```bash
 docker run --rm -v $(pwd)/test.dll:/capa-rules/test.dll bruteforce/capa -r /capa-rules --color auto test.dll
 ```
