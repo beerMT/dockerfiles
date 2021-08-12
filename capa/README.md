@@ -25,3 +25,6 @@ docker run --rm -v $(pwd)/test.dll:/capa-rules/test.dll bruteforce/capa -r /capa
 
 * https://www.fireeye.com/blog/threat-research/2020/07/capa-automatically-identify-malware-capabilities.html
 * https://github.com/fireeye/capa 
+
+
+TEST1!
