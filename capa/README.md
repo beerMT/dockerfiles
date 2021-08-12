@@ -5,7 +5,7 @@
 >Docker container that installs the FE CAPA project from PyPi and clones the capa-rules to a working directory.
 
 - [Docker Container](https://hub.docker.com/r/bruteforce/capa) on Docker Hub
-- [Dockerfile](https://github.com/beerMT/capa_docker/blob/main/capa.Dockerfile) on GitHub
+- [Dockerfile](https://github.com/beerMT/dockerfiles/blob/main/capa/capa.Dockerfile) on GitHub
 
 ## Usage
 
