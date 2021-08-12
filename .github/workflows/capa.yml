@@ -1,6 +1,6 @@
 # Workflow for CAPA Dockerfile
 
-name: CI to Docker Hub
+name: CAPA to Docker Hub
 
 on:
   push:
