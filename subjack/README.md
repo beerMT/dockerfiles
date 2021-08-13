@@ -5,7 +5,7 @@
 > Docker container that builds the sub-jack Go project.
 
 - [Docker Container](https://hub.docker.com/r/bruteforce/subjack) on Docker Hub
-- [Dockerfile](https://github.com/beerMT/subjack_docker/blob/main/subjack.Dockerfile) on GitHub
+- [Dockerfile](https://github.com/beerMT/dockerfiles/blob/main/subjack/subjack.Dockerfile) on GitHub
 
 ## Usage
 
