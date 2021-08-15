@@ -11,8 +11,14 @@
 
 To run the script against an IP target:
 ```bash
-docker run --rm -v $(pwd):/mnt/ bruteforce/subjack -w /mnt/<target_list.txt> -ssl -v
+docker run --rm -v $(pwd):/mnt/ bruteforce/subjack -c /go/pkg/mod/github.com/haccer/subjack@v0.0.0-20201112041112-49c51e57deab/fingerprints.json -w /mnt/tgt_list.txt -ssl -v -o /mnt/results.txt
 ```
+> `-c` correctly sets the config path for fingerprints.json, since the project is built with go get command.
+
+> `-o` output file containing results.
+
+> `-v` verbose flag to see feedback.
+
 > `-w` reads in the target list to enumerate against, this file directory is a mounted volume via the docker -v flag.
 
 > `-ssl` will provide more fidelity by forcing the https session.
@@ -21,11 +27,6 @@ To receive details about sub-jack:
 ```bash
 docker run --rm bruteforce/subjack -h
 ```
-
-## Target Selection
-
-This tool can be used for offensive and defensive security posture checks. Determine public facing domains for the organization, usually cloud assets, and check to see if they are susceptible to dangling DNS/ subdomain hijacking. Subdomains can be gathered durign recon phases of an offensive engagement via passive DNS records, forward DNS, subdomain brute forcing, and TLS certificate inspection. Insert the discovered (or known) domains into the target_list.txt and pass (docker flag -v is a bind mount from host to container) that into the subjack docker container for analysis.
-
 
 ## References
 * https://github.com/haccer/subjack (THE project - hats off to a cool tool!)
