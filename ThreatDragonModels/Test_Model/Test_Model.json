@@ -1,0 +1,17 @@
+{
+  "summary": {
+    "title": "Test_Model",
+    "owner": "Brad Palm",
+    "description": "Test system"
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "title": "Test_Diagram",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 0
+      }
+    ]
+  }
+}
