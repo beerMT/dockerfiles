@@ -2,7 +2,7 @@
 
 ![Docker Pulls](https://img.shields.io/docker/pulls/bruteforce/capa.svg)
 
->Docker container that installs the FE CAPA project from PyPi and clones the capa-rules to a working directory in the container.
+>Docker container that installs the Mandiant CAPA project from PyPi and clones the capa-rules to a working directory in the container.
 
 - [Docker Container](https://hub.docker.com/r/bruteforce/capa) on Docker Hub
 - [Dockerfile](https://github.com/beerMT/dockerfiles/blob/main/capa/capa.Dockerfile) on GitHub
@@ -23,5 +23,5 @@ docker run --rm -v $(pwd)/test.dll:/capa-rules/test.dll bruteforce/capa -r /capa
 
 ## References
 
-* https://www.fireeye.com/blog/threat-research/2020/07/capa-automatically-identify-malware-capabilities.html
-* https://github.com/fireeye/capa
+* https://www.mandiant.com/resources/capa-automatically-identify-malware-capabilities
+* https://github.com/mandiant/capa
