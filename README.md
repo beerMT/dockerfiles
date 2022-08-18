@@ -1,2 +1,2 @@
 # dockerfiles
-Various Dockerfiles used for ops and analysis
+Various Dockerfiles used for SecOps and analysis
