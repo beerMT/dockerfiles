@@ -2,6 +2,12 @@
 
 name: NMAP_CSbeacon_Grab to Docker Hub
 
+on: 
+  workflow_dispatch:
+  push:
+    branches:
+      - 'main'
+
 on:
   push:
     branches: [ main ]
