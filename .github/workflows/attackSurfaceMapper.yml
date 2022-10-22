@@ -4,14 +4,11 @@ name: AttackSurfaceMapper to Docker Hub
 
 on: 
   workflow_dispatch:
-  push:
-    branches:
-      - 'main'
-
-on:
+    branches: [ main ]
+    paths:
+      - 'attackSurfaceMapper/**'
   push:
     branches: [ main ]
-
     paths:
       - 'attackSurfaceMapper/**'
 
