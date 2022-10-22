@@ -8,7 +8,7 @@ RUN locale-gen en_US.UTF-8
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 WORKDIR /go/src/
-RUN go install github.com/haccer/subjack
+RUN go install github.com/haccer/subjack@latest
 ENTRYPOINT ["/go/bin/subjack"]
 
 # Error: /src/github.com/haccer/subjack/fingerprints.json: no such file or directory
