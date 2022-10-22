@@ -4,14 +4,11 @@ name: NMAP_CSbeacon_Grab to Docker Hub
 
 on: 
   workflow_dispatch:
-  push:
-    branches:
-      - 'main'
-
-on:
+    branches: [ main ]
+    paths:
+      - 'nmap_CSbeacon_grab/**'
   push:
     branches: [ main ]
-
     paths:
       - 'nmap_CSbeacon_grab/**'
 
