@@ -4,14 +4,11 @@ name: Malwoverview to Docker Hub
 
 on: 
   workflow_dispatch:
-  push:
-    branches:
-      - 'main'
-
-on:
+    branches: [main]
+    paths:
+      - 'malwoverview/**'
   push:
     branches: [ main ]
-
     paths:
       - 'malwoverview/**'
 
