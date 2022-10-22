@@ -4,14 +4,11 @@ name: CAPA to Docker Hub
 
 on: 
   workflow_dispatch:
-  push:
-    branches:
-      - 'main'
-
-on:
+    branches: [ main ]
+    paths:
+      - 'capa/**'
   push:
     branches: [ main ]
-
     paths:
       - 'capa/**'
 
