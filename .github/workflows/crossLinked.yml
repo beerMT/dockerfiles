@@ -5,7 +5,8 @@ name: crossLinked to Docker Hub
 on: 
   workflow_dispatch:
     branches: [ main ]
-    - 'crossLinked/**'
+    paths:
+      - 'crossLinked/**'
   push:
     branches: [ main ]
     paths:
