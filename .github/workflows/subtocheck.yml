@@ -5,13 +5,11 @@ name: Subtocheck to Docker Hub
 on: 
   workflow_dispatch:
   push:
-    branches:
-      - 'main'
-
-on:
+    branches: [ main ]
+    paths:
+      - 'subtocheck/**'
   push:
     branches: [ main ]
-
     paths:
       - 'subtocheck/**'
 
