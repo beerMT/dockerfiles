@@ -3,6 +3,11 @@ FROM python:3.9-slim-buster
 RUN apt-get update && \
     apt-get install -y git
 RUN pip install flare-capa
+#Handle capa sigs import
+RUN mkdir sigs && cd sigs
+RUN wget https://github.com/mandiant/capa/raw/master/sigs/1_flare_msvc_rtf_32_64.sig
+RUN wget https://github.com/mandiant/capa/raw/master/sigs/2_flare_msvc_atlmfc_32_64.sig
+RUN wget https://github.com/mandiant/capa/raw/master/sigs/3_flare_common_libs.sig
 #Handle capa-rules import
 RUN git clone https://github.com/mandiant/capa-rules
 WORKDIR /capa-rules
