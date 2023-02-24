@@ -1,4 +1,4 @@
-#Updated for Malwoverview 5.0.0 - 3/25/22
+#Updated for Malwoverview 5.1.1 - 2/23/23
 FROM python:3.8-slim-buster
 #You need to install the libmagic1 package from Debian
 RUN apt-get update && \
