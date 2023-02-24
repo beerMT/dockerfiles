@@ -1,3 +1,4 @@
+#Updated for CAPA 5.0.0 - 2/23/23
 FROM python:3.9-slim-buster
 RUN apt-get update && \
     apt-get install -y git
