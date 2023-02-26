@@ -8,6 +8,10 @@
 - [Dockerfile](https://github.com/beerMT/dockerfiles/blob/main/capa/capa.Dockerfile) on GitHub
 
 ## Usage
+To download the docker container from docker hub:
+```bash
+docker pull bruteforce/capa
+```
 
 To run the CAPA tool against a file for inspection:
 
