@@ -11,6 +11,11 @@
 
 Follow the directions from Malwoverview to setup the .malwapi.conf with the necessary API keys. In the below example, it starts out as unhidden file (malwapi.conf) on the host machine and then gets mounted as a hidden file (.malwapi.conf) within the /root folder. This is default directory and format that Maloverview expects for the file.
 
+To download the docker container from docker hub:
+```bash
+docker pull bruteforce/malwoverview
+```
+
 To run the Malwoverview tool against a file and perform a VT lookup:
 ```bash
 docker run --rm -v $(pwd)/malwapi.conf:/root/.malwapi.conf \ 
